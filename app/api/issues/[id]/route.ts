@@ -1,6 +1,5 @@
 import { IssueSchema } from "@/app/validationSchemas";
 import prisma from "@/prisma/client";
-import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function PATCH(
@@ -45,3 +44,5 @@ export async function DELETE(
 
   return NextResponse.json({});
 }
+
+
